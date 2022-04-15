@@ -2,13 +2,19 @@ body{
     font-family: 'roboto' , sans-serif;
     line-height: 1.5;
     color: #444;
-    font-size: 100%;
+    font-size: 62.5%;
+}
+
+*,*:after, *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6em;
     color: #00CCFF;
 }
 
@@ -29,18 +35,18 @@ img{
 header{
     max-width: 100%;
     height: 48px;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 3.6em;
+    margin-bottom: 3.6em;
 }
 
 .logo{
 
-    width: 234px;
+    width: 20.74%;
     float: left;
 }
 
 nav{
-    width: 840px;
+    width: 74.47%;
     float: right;
 }
 
@@ -50,9 +56,9 @@ nav ul{
 }
 
 nav li{
-    font-size: 12px;
-    margin-left: 20px;
-    margin-top: 10px;
+    font-size: 1.2em;
+    margin-left: 2em;
+    margin-top: 1em;
     display: inline-block;
 }
 
@@ -63,7 +69,7 @@ nav li a {
 .banner{
     background: url('../SiteDesignDigital/img/banner.jpg');
     height: 450px;
-    margin-bottom: 48px;
+    margin-bottom: 4.8em;
     position: relative;
 }
 
@@ -71,27 +77,27 @@ nav li a {
     position: absolute;
     top: 48px;
     background: rgba(0,0,0, 0.6) ;
-    width: 480px;
-   padding: 24px 14px 24px 40px; 
+    width: 42.55%;
+   padding: 2.4em 1.4em 2.4em 4em; 
 }
 
 h1{
-    font-size: 40px;
+    font-size: 4em;
     color: #FFF;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .caixa p {
-    font-size: 18px;
+    font-size: 1.8em;
     color: #FFF;
 
 }
 
 article {
-    width: 264px;
+    width: 23.4%;
     float: left;
-    margin-right: 24px;
+    margin-right: 2.13%;
 }
 
 article:last-child{
@@ -99,18 +105,132 @@ margin-right: 0;
 }
 
 h2{
-    font-size: 24px;
+    font-size: 2.4em;
 }
 
 p{
+    font-size: 1.6em;
     text-align: justify;
 }
 
 footer{
-    width: 100%;
-    margin: 24px auto;
-    font-size: 10px;
+    
+  
+    font-size: 1em;
     margin-bottom: 0;
     
 }
 
+@media screen and (max-width: 1128px){
+
+    .container{
+        padding: 0 2.4em 0 2.4em;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .caixa{
+        width: 65%;
+    }
+
+    article{
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: 2.4em;
+
+    }
+
+    article:nth-child(even){
+        margin-right: 0;
+    }
+
+    .logo{
+        margin-top: 1.2em;
+        width: 25%;
+    }
+}
+
+
+@media screen and (max-width: 718px){
+
+
+    .banner{
+        position: relative;
+        float: left;
+        margin: 0;
+        height: 150px;
+    }
+
+    .caixa{
+        position: relative;
+        float: left;
+        width: 100%;
+        background: #000;
+        margin-top: 100px;
+        display: block;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    section{
+        margin-top: 550px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    
+    nav{
+        width: 100%;
+    }
+
+    nav li {
+    font-size: 0.8em;
+    float: left;
+    }
+
+    nav li:first-child{
+        margin-left: 0;
+    } 
+
+}
+
+@media screen and (max-width: 520px){
+    article{
+        width: 100%;
+        margin-left: 0;
+        }
+
+        .caixa{
+            padding: 1.2em 2em 1.2em 2em;
+            position: relative;
+            display: block;
+            float: left;
+            width: 100%;
+            background: #000;
+            margin-top: 80px;
+        }
+
+        .banner{
+            height: 120px;
+        }
+
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.clearfix:after{
+    *zoom: 1;
+}
